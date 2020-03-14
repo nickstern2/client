@@ -6,7 +6,7 @@ require('dotenv').config()
 class GoogleAuth extends React.Component {
   // Initializes the library
   componentDidMount() {
-    const REACT_APP_GOOGLE_KEY = process.env.REACT_APP_GOOGLE_KEY;
+    const REACT_APP_GOOGLE_KEY = '745524184174-6o34415o3e80e7mt45djb19jv09eduhl.apps.googleusercontent.com';
 
     window.gapi.load('client:auth2', () => {
       // .init is async network request
