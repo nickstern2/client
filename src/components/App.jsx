@@ -12,7 +12,7 @@ const App = () => {
   // Switch will solve the router showing both create and show in #create
   // does this because of the :id placeholder === create as well
   return(
-    <div className="ui container">
+    <div className="ui container" style={{ marginTop: 5 }}>
       <Router history={history}>
       <div>
         <Header />
