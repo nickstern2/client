@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'https://twitch-server.herokuapp.com/'
+  baseURL: 'https://api-server-2.herokuapp.com'
 });
