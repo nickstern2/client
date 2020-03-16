@@ -52,8 +52,10 @@ class StreamShow extends React.Component {
     return(
       <div>
         <video ref={this.videoRef} style={{ width: '100%' }} controls={true}/>
-        <h1>{title}</h1>
-        <h5>{description}</h5>
+        <div className="ui segment">
+          <h1 className="ui header">{title}</h1>
+          <h5>{description}</h5>
+        </div>
       </div>
     );
   }
@@ -64,7 +66,7 @@ class StreamShow extends React.Component {
         <div>
           {this.renderContent()}
         </div>
-        <Link to='/' className="ui button primary">Back</Link>
+        <Link to='/' className="ui button primary" style={{ marginTop: 10, marginBottom: 10 }}>Back</Link>
       </div>
     );
   }
